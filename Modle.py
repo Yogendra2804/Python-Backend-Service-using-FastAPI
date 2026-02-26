@@ -1,5 +1,5 @@
 from pydantic import field_validator, BaseModel
-from Telusko_FASTAPI.engine import Base
+from engine import Base
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
 
@@ -25,3 +25,4 @@ class CARDS(Base):
     card_type: Mapped[str] = mapped_column("Card Type", String, nullable=False)
     card_category: Mapped[str] = mapped_column("Card Category", String, nullable=False)
     issuer: Mapped[str] = mapped_column("Issuer", String, nullable=False)
+

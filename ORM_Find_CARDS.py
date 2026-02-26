@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from Modle import CARDS, Value
-from Telusko_FASTAPI.engine import session
+from engine import session
 
 app = FastAPI()
 # -------------------------------------------------------------------------------------------------------
@@ -41,3 +41,4 @@ def ORM_post_get_CARDS(data: Value):
     except:
         session.close()
         return {"message": "ORM expect caught something."}
+

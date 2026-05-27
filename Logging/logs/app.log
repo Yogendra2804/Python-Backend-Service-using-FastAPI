@@ -1,0 +1,42 @@
+2026-05-27 01:09:23,964 - ORM_Find_CARDS - INFO - App starting. !
+2026-05-27 01:09:47,294 - ORM_Find_CARDS - INFO - generateTokens was called. !
+2026-05-27 01:09:47,294 - root - INFO - Generate token request recived. ! 
+2026-05-27 01:09:47,306 - ORM_Find_CARDS - INFO - Token Returned. 
+2026-05-27 01:10:11,872 - root - INFO - Getting current user. ! 
+2026-05-27 01:10:11,872 - root - INFO - Verfing Token . ! 
+2026-05-27 01:10:11,873 - root - INFO - User returned. !
+2026-05-27 01:10:11,873 - ORM_Find_CARDS - INFO - ORM_get_CARD_details. !
+2026-05-27 01:10:11,889 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-27 01:10:11,893 - sqlalchemy.engine.Engine - INFO - SELECT "CARDS"."BIN_IIN" AS "CARDS_BIN_IIN", "CARDS"."Network_Scheme" AS "CARDS_Network_Scheme", "CARDS"."Card Type" AS "CARDS_Card Type", "CARDS"."Card Category" AS "CARDS_Card Category", "CARDS"."Issuer" AS "CARDS_Issuer" 
+FROM "CARDS" 
+WHERE "CARDS"."BIN_IIN" = ?
+2026-05-27 01:10:11,894 - sqlalchemy.engine.Engine - INFO - [generated in 0.00067s] (432000,)
+2026-05-27 01:10:11,899 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-05-27 01:10:43,314 - root - INFO - Getting current user. ! 
+2026-05-27 01:10:43,314 - root - INFO - Verfing Token . ! 
+2026-05-27 01:10:43,315 - root - INFO - User returned. !
+2026-05-27 01:10:43,316 - ORM_Find_CARDS - INFO - ORM_get_CARD_details. !
+2026-05-27 01:10:43,317 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-27 01:10:43,317 - sqlalchemy.engine.Engine - INFO - SELECT "CARDS"."BIN_IIN" AS "CARDS_BIN_IIN", "CARDS"."Network_Scheme" AS "CARDS_Network_Scheme", "CARDS"."Card Type" AS "CARDS_Card Type", "CARDS"."Card Category" AS "CARDS_Card Category", "CARDS"."Issuer" AS "CARDS_Issuer" 
+FROM "CARDS" 
+WHERE "CARDS"."BIN_IIN" = ?
+2026-05-27 01:10:43,318 - sqlalchemy.engine.Engine - INFO - [cached since 31.42s ago] (324000,)
+2026-05-27 01:10:43,319 - ORM_Find_CARDS - INFO - Detailes from 324000 were returned
+2026-05-27 01:11:07,250 - root - INFO - Getting current user. ! 
+2026-05-27 01:11:07,250 - root - INFO - Verfing Token . ! 
+2026-05-27 01:11:07,251 - root - INFO - User returned. !
+2026-05-27 01:11:07,251 - ORM_Find_CARDS - INFO - ORM_post_CARD_details. !
+2026-05-27 01:11:07,252 - sqlalchemy.engine.Engine - INFO - SELECT "CARDS"."BIN_IIN" AS "CARDS_BIN_IIN", "CARDS"."Network_Scheme" AS "CARDS_Network_Scheme", "CARDS"."Card Type" AS "CARDS_Card Type", "CARDS"."Card Category" AS "CARDS_Card Category", "CARDS"."Issuer" AS "CARDS_Issuer" 
+FROM "CARDS" 
+WHERE "CARDS"."BIN_IIN" = ?
+2026-05-27 01:11:07,253 - sqlalchemy.engine.Engine - INFO - [cached since 55.36s ago] (324000,)
+2026-05-27 01:11:07,254 - ORM_Find_CARDS - INFO - Detailes from 324000 were returned
+2026-05-27 01:11:18,474 - root - INFO - Getting current user. ! 
+2026-05-27 01:11:18,474 - root - INFO - Verfing Token . ! 
+2026-05-27 01:11:18,474 - root - INFO - User returned. !
+2026-05-27 01:11:18,475 - ORM_Find_CARDS - INFO - findBINS was called. !
+2026-05-27 01:11:18,476 - sqlalchemy.engine.Engine - INFO - SELECT "CARDS"."BIN_IIN" 
+FROM "CARDS" 
+WHERE "CARDS"."Network_Scheme" = ?
+2026-05-27 01:11:18,477 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] ('VISA',)
+2026-05-27 01:11:18,477 - ORM_Find_CARDS - INFO - List found! .

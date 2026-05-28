@@ -1,5 +1,5 @@
 from pydantic import field_validator, BaseModel
-from Telusko_FASTAPI.engine import Base
+from engine import Base
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
 

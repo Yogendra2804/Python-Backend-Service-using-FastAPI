@@ -1,6 +1,6 @@
 from fastapi import FastAPI , Depends
 from Modle import CARDS, Value
-from Telusko_FASTAPI.engine import session
+from engine import session
 from CARDS_token import get_current_user , gen_token
 from pydantic import EmailStr
 from datetime import datetime , timedelta

@@ -17,4 +17,9 @@ logger.info("fetched API's from Find_CARDS.py")
 app.include_router(ORM_Find_CARDS_rounter)
 logger.info("fetched API's from ORM_Find_CARDS.py")
 
-
+@app.get("/")
+def mai():
+  return {
+    "msg" : "Type /docs in the url" 
+  }
+  

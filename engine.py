@@ -1,13 +1,13 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
+DATABASE_URL = "sqlite:///./database1.db"
+
 engine = create_engine(
-    "sqlite:///D:/Coding laungages/python/Base/sequal_light/Database/database1.db",
+    DATABASE_URL,
     echo=True,
     connect_args={"check_same_thread": False}
 )
-
-# SessionLocal = sessionmaker(bind=engine, autoflush=False)
 
 class Base(DeclarativeBase):
     pass

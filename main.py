@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from Logging import logger_config
-from FASTAPI.Find_CARDS import router as Find_CARDS_rounter 
-from FASTAPI.ORM_Find_CARDS import router as ORM_Find_CARDS_rounter
+import Logging.zlogger_config 
+from Find_CARDS import router as Find_CARDS_rounter 
+from ORM_Find_CARDS import router as ORM_Find_CARDS_rounter
 
 import logging
 logger = logging.getLogger(__name__)

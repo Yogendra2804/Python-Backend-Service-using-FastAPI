@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 connection = sqlite3.connect(
-    r"D:\Coding laungages\python\Base\sequal_light\Database\database1.db",
+    "database1.db",
     check_same_thread=False
 )
 
